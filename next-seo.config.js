@@ -1,20 +1,22 @@
+import { SITE_NAME, SITE_URL } from "./constants"
+
 export default {
-	titleTemplate: "%s — Example",
-	description: "Example",
-	canonical: "https://www.example.com/",
+	titleTemplate: `%s — ${SITE_NAME}`,
+	description: SITE_NAME,
+	canonical: SITE_URL,
 	openGraph: {
-		title: "Example",
-		description: "Example",
+		title: SITE_NAME,
+		description: SITE_NAME,
 		type: "website",
 		locale: "en_IE",
-		url: "https://www.example.com/",
-		site_name: "Example",
+		url: SITE_URL,
+		site_name: SITE_NAME,
 		images: [
 			{
 				url: "/image.jpg",
 				width: 800,
 				height: 600,
-				alt: "Example",
+				alt: SITE_NAME,
 			},
 		],
 	},
