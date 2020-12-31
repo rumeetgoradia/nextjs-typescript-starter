@@ -23,7 +23,8 @@ The following packages are used:
 
 - [@material-ui/core](https://www.npmjs.com/package/@material-ui/core)
 - [styled-components](https://www.npmjs.com/package/styled-components)
-- [next-optimized-images@canary](https://www.npmjs.com/package/next-optimized-images) + [react-optimized-image](https://www.npmjs.com/package/react-optimized-image)
+- [react-icons](https://www.npmjs.com/package/react-icons)
+- [next-optimized-images@canary](https://www.npmjs.com/package/next-optimized-images)
 - [next-seo](https://www.npmjs.com/package/next-seo)
 - [next-compose-plugins](https://www.npmjs.com/package/next-compose-plugins)
 
