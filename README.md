@@ -22,6 +22,7 @@ npx create-next-app -e https://github.com/rumeetgoradia/nextjs-typescript-starte
 The following packages are used:
 
 - [@material-ui/core](https://www.npmjs.com/package/@material-ui/core)
+- [clsx](https://www.npmjs.com/package/clsx)
 - [styled-components](https://www.npmjs.com/package/styled-components)
 - [react-icons](https://www.npmjs.com/package/react-icons)
 - [next-optimized-images@canary](https://www.npmjs.com/package/next-optimized-images)
