@@ -1,7 +1,10 @@
-import { StyledExample } from "./styles"
+import { EXAMPLE_CONTENT } from "@/content"
+import { useExampleStyles } from "./Example.styles"
 
-const Example = () => {
-	return <StyledExample>JSK World!</StyledExample>
+const Example: React.FC = () => {
+	const classes = useExampleStyles()
+
+	return <>{EXAMPLE_CONTENT}</>
 }
 
 export default Example

@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://www.rumeetgoradia.com">
-    <img alt="Rumeet Goradia" src="public/images/favicon.png" width="60" />
+    <img alt="Rumeet Goradia" src="public/images/logo.png" width="60" />
   </a>
 </p>
 <h1 align="center">
@@ -25,7 +25,9 @@ The following packages are used:
 - [clsx](https://www.npmjs.com/package/clsx)
 - [styled-components](https://www.npmjs.com/package/styled-components)
 - [react-icons](https://www.npmjs.com/package/react-icons)
-- [next-optimized-images@canary](https://www.npmjs.com/package/next-optimized-images)
 - [next-seo](https://www.npmjs.com/package/next-seo)
-- [next-compose-plugins](https://www.npmjs.com/package/next-compose-plugins)
+- [svgr](https://www.npmjs.com/package/svgr)
+- [react-hook-form](https://www.npmjs.com/package/react-hook-form)
+- [yup](https://www.npmjs.com/package/yup)
+- [axios](https://www.npmjs.com/package/axios)
 
