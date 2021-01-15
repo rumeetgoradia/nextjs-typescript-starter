@@ -1,0 +1,33 @@
+<p align="center">
+  <a href="https://www.rumeetgoradia.com">
+    <img alt="Rumeet Goradia" src="public/images/logo.png" width="60" />
+  </a>
+</p>
+<h1 align="center">
+Next.js TypeScript Starter
+</h1>
+
+Kick off your Next.js TypeScript project using this example. This starter repo ships with the packages listed below, as well as their base configuration files and development dependencies.
+
+## Usage
+
+Use the following command, followed by the name of your project.
+
+```
+npx create-next-app -e https://github.com/rumeetgoradia/nextjs-typescript-starter 
+```
+
+## Packages
+
+The following packages are used:
+
+- [@material-ui/core](https://www.npmjs.com/package/@material-ui/core)
+- [clsx](https://www.npmjs.com/package/clsx)
+- [styled-components](https://www.npmjs.com/package/styled-components)
+- [react-icons](https://www.npmjs.com/package/react-icons)
+- [next-seo](https://www.npmjs.com/package/next-seo)
+- [svgr](https://www.npmjs.com/package/svgr)
+- [react-hook-form](https://www.npmjs.com/package/react-hook-form)
+- [yup](https://www.npmjs.com/package/yup)
+- [axios](https://www.npmjs.com/package/axios)
+
