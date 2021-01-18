@@ -17,17 +17,41 @@ Use the following command, followed by the name of your project.
 npx create-next-app -e https://github.com/rumeetgoradia/nextjs-typescript-starter 
 ```
 
+## Checklist
+1. Update `package.json` and `constants/seo.ts` with relevant project information. Update `next-seo.config.ts` if needed.
+2. Update brand/logo in `public/images`.
+3. [Generate favicons](https://realfavicongenerator.net/) and save them in `public/favicons`. Update `pages/_document.tsx` if using non-default file names.
+4. Save font files in `public/fonts` and update:
+   - `pages/_document.tsx`
+   - `theme/foundations/fonts.ts`
+   - `theme/styles/font-faces.ts`
+   - `vercel.json`
+
 ## Packages
 
-The following packages are used:
+### UI
+- [Chakra UI](https://npmjs.com/package/@chakra-ui/react)
+- [Emotion](https://www.npmjs.com/package/@emotion/react)
+- [Motion](https://www.npmjs.com/package/framer-motion)
+- [next-themes](https://www.npmjs.com/package/next-themes)
 
-- [@material-ui/core](https://www.npmjs.com/package/@material-ui/core)
-- [clsx](https://www.npmjs.com/package/clsx)
-- [styled-components](https://www.npmjs.com/package/styled-components)
-- [react-icons](https://www.npmjs.com/package/react-icons)
-- [next-seo](https://www.npmjs.com/package/next-seo)
-- [svgr](https://www.npmjs.com/package/svgr)
-- [react-hook-form](https://www.npmjs.com/package/react-hook-form)
-- [yup](https://www.npmjs.com/package/yup)
-- [axios](https://www.npmjs.com/package/axios)
+### Images & Icons
+- [Plaiceholder](https://www.npmjs.com/package/@plaiceholder/next)
+- [SVGR Webpack](https://www.npmjs.com/package/@svgr/webpack)
+- [React Icons](https://www.npmjs.com/package/react-icons)
+
+### Forms
+- [React Hook Form](https://www.npmjs.com/package/react-hook-form)
+- [Yup](https://www.npmjs.com/package/yup)
+
+### HTTP Requests
+- [Axios](https://www.npmjs.com/package/axios)
+
+### SEO
+- [Next SEO](https://www.npmjs.com/package/next-seo)
+
+### Miscellaneous
+- [Preact](https://www.npmjs.com/package/preact)
+
+
 

@@ -13,7 +13,7 @@ export default {
 		site_name: SITE_NAME,
 		images: [
 			{
-				url: "/image.jpg",
+				url: `${SITE_URL}/images/logo.png`,
 				width: 800,
 				height: 600,
 				alt: SITE_NAME,

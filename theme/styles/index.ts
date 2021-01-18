@@ -1,5 +1,5 @@
+import { createTransition } from "@/utils"
 import { ThemeOverride } from "@chakra-ui/react"
-import { createTransition } from "../../utils/createTransition"
 import fontFaces from "./font-faces"
 
 const styles: ThemeOverride["styles"] = {
