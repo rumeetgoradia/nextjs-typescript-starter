@@ -1,38 +1,24 @@
-import { CssBaseline } from "@material-ui/core"
-import { ThemeProvider as MaterialThemeProvider } from "@material-ui/core/styles"
+import theme, { fontFaces } from "@/theme"
+import { ChakraProvider, useColorMode } from "@chakra-ui/react"
+import { Global } from "@emotion/react"
 import { DefaultSeo } from "next-seo"
-import NextApp from "next/app"
-import { useEffect } from "react"
-import { ThemeProvider as SCThemeProvider } from "styled-components"
+import { ThemeProvider } from "next-themes"
+import { AppProps } from "next/app"
 import SEO from "../next-seo.config"
-import theme from "../theme"
 
-const App: React.FC = ({ children }) => {
-	useEffect(() => {
-		const jssStyles = document.querySelector("#jss-server-side")
-		if (jssStyles && jssStyles.parentNode)
-			jssStyles.parentNode.removeChild(jssStyles)
-	}, [])
-
+const App: React.FC<AppProps> = ({ Component, pageProps }) => {
+	const { colorMode } = useColorMode()
 	return (
 		<>
 			<DefaultSeo {...SEO} />
-			<MaterialThemeProvider theme={theme}>
-				<CssBaseline />
-				<SCThemeProvider theme={theme}>{children}</SCThemeProvider>
-			</MaterialThemeProvider>
+			<ChakraProvider theme={theme}>
+				<Global styles={fontFaces} />
+				<ThemeProvider defaultTheme={colorMode} disableTransitionOnChange>
+					<Component {...pageProps} />
+				</ThemeProvider>
+			</ChakraProvider>
 		</>
 	)
 }
 
-export default class InheritedApp extends NextApp {
-	render() {
-		const { Component, pageProps } = this.props
-
-		return (
-			<App>
-				<Component {...pageProps} />
-			</App>
-		)
-	}
-}
+export default App

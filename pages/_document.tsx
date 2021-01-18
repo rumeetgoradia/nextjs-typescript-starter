@@ -1,74 +1,55 @@
-import { ServerStyleSheets as MaterialUiServerStyleSheets } from "@material-ui/core/styles"
-import NextDocument, {
-	DocumentContext,
-	Head,
-	Html,
-	Main,
-	NextScript,
-} from "next/document"
-import React from "react"
-import { ServerStyleSheet as StyledComponentSheets } from "styled-components"
+import theme from "@/theme"
+import { ColorModeScript } from "@chakra-ui/react"
+import Document, { Head, Html, Main, NextScript } from "next/document"
 
-export default class Document extends NextDocument {
-	static async getInitialProps(ctx: DocumentContext) {
-		const styledComponentSheet = new StyledComponentSheets()
-		const materialUiSheets = new MaterialUiServerStyleSheets()
-		const originalRenderPage = ctx.renderPage
-
-		try {
-			ctx.renderPage = () =>
-				originalRenderPage({
-					enhanceApp: (App: Function) => (props: Object) => {
-						return styledComponentSheet.collectStyles(
-							materialUiSheets.collect(<App {...props} />)
-						)
-					},
-				})
-
-			const initialProps = await NextDocument.getInitialProps(ctx)
-
-			return {
-				...initialProps,
-				styles: [
-					<React.Fragment key="styles">
-						{initialProps.styles}
-						{materialUiSheets.getStyleElement()}
-						{styledComponentSheet.getStyleElement()}
-					</React.Fragment>,
-				],
-			}
-		} finally {
-			styledComponentSheet.seal()
-		}
-	}
-
+class MyDocument extends Document {
 	render() {
 		return (
 			<Html lang="en">
 				<Head>
-					<link rel="preconnect" href="https://fonts.gstatic.com" />
-					<link href="FONTS HERE" rel="stylesheet" />
-					<link rel="icon" href="/favicon.ico" />
+					<link
+						rel="preload"
+						href="/fonts/inter.woff2"
+						as="font"
+						type="font/woff2"
+						crossOrigin="anonymous"
+					/>
 					<link
 						rel="apple-touch-icon"
 						sizes="180x180"
-						href="/apple-touch-icon.png"
+						href="/favicons/apple-touch-icon.png"
 					/>
 					<link
 						rel="icon"
 						type="image/png"
 						sizes="32x32"
-						href="/favicon-32x32.png"
+						href="/favicons/favicon-32x32.png"
 					/>
 					<link
 						rel="icon"
 						type="image/png"
 						sizes="16x16"
-						href="/favicon-16x16.png"
+						href="/favicons/favicon-16x16.png"
 					/>
-					<link rel="manifest" href="/site.webmanifest" />
+					<link rel="manifest" href="/favicons/site.webmanifest" />
+					<link
+						rel="mask-icon"
+						href="/favicons/safari-pinned-tab.svg"
+						color="#34926e"
+					/>
+					<link rel="shortcut icon" href="/favicons/favicon.ico" />
+					<meta name="apple-mobile-web-app-title" content="Rumeet Goradia" />
+					<meta name="application-name" content="Rumeet Goradia" />
+					<meta name="msapplication-TileColor" content="#00a300" />
+					<meta
+						name="msapplication-config"
+						content="/favicons/browserconfig.xml"
+					/>
+					<meta name="theme-color" content="#111820" />
+					<meta content="IE=edge" httpEquiv="X-UA-Compatible" />
 				</Head>
-				<body>
+				<body className="bg-white dark:bg-black text-white dark:text-black">
+					<ColorModeScript initialColorMode={theme.config.initialColorMode} />
 					<Main />
 					<NextScript />
 				</body>
@@ -76,3 +57,5 @@ export default class Document extends NextDocument {
 		)
 	}
 }
+
+export default MyDocument

@@ -19,6 +19,7 @@
       "@/constants": ["constants/index.ts"],
       "@/content": ["content/index.ts"],
       "@/images/*": ["public/images/*"],
+      "@/theme": ["theme/index.ts"],
       "@/utils": ["utils/index.ts"],
     },
     "resolveJsonModule": true,
@@ -31,7 +32,6 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    "@types/styled-components.d.ts",
     "@types/svg.d.ts",
     "@types/index.d.ts"
   ]

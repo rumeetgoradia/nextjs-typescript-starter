@@ -1,7 +1,7 @@
 const path = require("path")
 
 module.exports = {
-	webpack(config) {
+	webpack: (config, { dev, isServer }) => {
 		config.module.rules.push({
 			test: /\.svg$/,
 			use: [
@@ -18,6 +18,20 @@ module.exports = {
 			],
 		})
 		config.resolve.alias["images"] = path.join(__dirname, "public", "images")
+
+		if (isServer) {
+			require("./scripts/generate-sitemap")
+		}
+
+		// Replace React with Preact only in client production build
+		if (!dev && !isServer) {
+			Object.assign(config.resolve.alias, {
+				react: "preact/compat",
+				"react-dom/test-utils": "preact/test-utils",
+				"react-dom": "preact/compat",
+			})
+		}
+
 		return config
 	},
 }
