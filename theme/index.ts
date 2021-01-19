@@ -4,8 +4,8 @@ import foundations from "./foundations"
 import styles, { fontFaces } from "./styles"
 
 const config: ThemeConfig = {
-	useSystemColorMode: true,
-	initialColorMode: "light",
+	useSystemColorMode: false,
+	initialColorMode: "dark",
 }
 
 const theme: Theme = extendTheme({

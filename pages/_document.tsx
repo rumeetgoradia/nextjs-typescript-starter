@@ -48,7 +48,7 @@ class MyDocument extends Document {
 					<meta name="theme-color" content="#111820" />
 					<meta content="IE=edge" httpEquiv="X-UA-Compatible" />
 				</Head>
-				<body className="bg-white dark:bg-black text-white dark:text-black">
+				<body>
 					<ColorModeScript initialColorMode={theme.config.initialColorMode} />
 					<Main />
 					<NextScript />

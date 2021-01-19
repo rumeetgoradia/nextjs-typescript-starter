@@ -33,7 +33,6 @@ npx create-next-app -e https://github.com/rumeetgoradia/nextjs-typescript-starte
 - [Chakra UI](https://npmjs.com/package/@chakra-ui/react)
 - [Emotion](https://www.npmjs.com/package/@emotion/react)
 - [Motion](https://www.npmjs.com/package/framer-motion)
-- [next-themes](https://www.npmjs.com/package/next-themes)
 
 ### Images & Icons
 - [Plaiceholder](https://www.npmjs.com/package/@plaiceholder/next)
