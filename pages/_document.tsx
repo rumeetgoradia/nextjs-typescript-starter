@@ -1,5 +1,3 @@
-import theme from "@/theme"
-import { ColorModeScript } from "@chakra-ui/react"
 import Document, { Head, Html, Main, NextScript } from "next/document"
 
 class MyDocument extends Document {
@@ -49,7 +47,6 @@ class MyDocument extends Document {
 					<meta content="IE=edge" httpEquiv="X-UA-Compatible" />
 				</Head>
 				<body>
-					<ColorModeScript initialColorMode={theme.config.initialColorMode} />
 					<Main />
 					<NextScript />
 				</body>
