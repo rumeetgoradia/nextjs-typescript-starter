@@ -23,16 +23,14 @@ npx create-next-app -e https://github.com/rumeetgoradia/nextjs-typescript-starte
 3. [Generate favicons](https://realfavicongenerator.net/) and save them in `public/favicons`. Update `pages/_document.tsx` if using non-default file names.
 4. Save font files in `public/fonts` and update:
    - `pages/_document.tsx`
-   - `theme/foundations/fonts.ts`
-   - `theme/styles/font-faces.ts`
+   - `public/fonts/fonts.css`
+   - `theme/index.ts`
    - `vercel.json`
 
 ## Packages
 
 ### UI
-- [Chakra UI](https://npmjs.com/package/@chakra-ui/react)
-- [Emotion](https://www.npmjs.com/package/@emotion/react)
-- [Motion](https://www.npmjs.com/package/framer-motion)
+- [Material-UI](https://www.npmjs.com/package/@material-ui/core)
 
 ### Images & Icons
 - [Plaiceholder](https://www.npmjs.com/package/@plaiceholder/next)

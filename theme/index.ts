@@ -1,19 +1,21 @@
-import { extendTheme, Theme, ThemeConfig } from "@chakra-ui/react"
-import components from "./components"
-import foundations from "./foundations"
-import styles, { fontFaces } from "./styles"
+import { createMuiTheme } from "@material-ui/core"
 
-const config: ThemeConfig = {
-	useSystemColorMode: false,
-	initialColorMode: "dark",
-}
-
-const theme: Theme = extendTheme({
-	...foundations,
-	components,
-	styles,
-	config,
+const theme = createMuiTheme({
+	typography: {
+		fontFamily: [
+			'"Inter"',
+			"-apple-system",
+			"BlinkMacSystemFont",
+			'"Segoe UI"',
+			"Roboto",
+			'"Helvetica Neue"',
+			"Arial",
+			"sans-serif",
+			'"Apple Color Emoji"',
+			'"Segoe UI Emoji"',
+			'"Segoe UI Symbol"',
+		].join(","),
+	},
 })
 
-export { fontFaces }
 export default theme
