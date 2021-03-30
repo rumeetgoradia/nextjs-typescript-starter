@@ -19,7 +19,7 @@
     "@plaiceholder/base64": "^1.0.0",
     "@plaiceholder/next": "^1.0.0",
     "axios": "^0.21.1",
-    "next": "^10.0.4",
+    "next": "^10.1.2",
     "next-seo": "^4.17.0",
     "preact": "^10.5.9",
     "react": "^16.14.0",
