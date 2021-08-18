@@ -33,7 +33,6 @@ npx create-next-app -e https://github.com/rumeetgoradia/nextjs-typescript-starte
 - [Material-UI](https://www.npmjs.com/package/@material-ui/core)
 
 ### Images & Icons
-- [Plaiceholder](https://www.npmjs.com/package/@plaiceholder/next)
 - [SVGR Webpack](https://www.npmjs.com/package/@svgr/webpack)
 - [React Icons](https://www.npmjs.com/package/react-icons)
 
