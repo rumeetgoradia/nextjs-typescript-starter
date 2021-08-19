@@ -1,5 +1,5 @@
-import Example from "@/components/Example"
-import { SITE_NAME } from "@/constants"
+import Example from "@components/Example"
+import { SITE_NAME } from "@constants"
 import { NextSeo } from "next-seo"
 
 const IndexPage: React.FC = () => {
