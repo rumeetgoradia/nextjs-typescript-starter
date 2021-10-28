@@ -1,14 +1,7 @@
-import Example from "@components/Example"
-import { SITE_NAME } from "@constants"
-import { NextSeo } from "next-seo"
+import type { NextPage } from "next"
 
-const IndexPage: React.FC = () => {
-	return (
-		<>
-			<NextSeo titleTemplate="%s" title={SITE_NAME} />
-			<Example />
-		</>
-	)
+const HomePage: NextPage = () => {
+	return <></>
 }
 
-export default IndexPage
+export default HomePage

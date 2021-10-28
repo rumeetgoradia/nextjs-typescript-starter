@@ -1,27 +1,18 @@
-import theme from "@/theme"
-import { CssBaseline, ThemeProvider } from "@material-ui/core"
+import { Chakra } from "@components/Chakra"
+import theme from "@theme"
 import { DefaultSeo } from "next-seo"
-import { AppProps } from "next/app"
-import { useEffect } from "react"
-import SEO from "../next-seo.config"
+import SeoProps from "next-seo.config"
+import type { AppProps } from "next/app"
 
-const App: React.FC<AppProps> = ({ Component, pageProps }) => {
-	useEffect(() => {
-		const jssStyles = document.querySelector("#jss-server-side")
-		if (jssStyles) {
-			jssStyles.parentElement?.removeChild(jssStyles)
-		}
-	}, [])
-
+export default function MyApp({ Component, pageProps }: AppProps) {
 	return (
 		<>
-			<DefaultSeo {...SEO} />
-			<ThemeProvider theme={theme}>
-				<CssBaseline />
+			<DefaultSeo {...SeoProps} />
+			<Chakra cookies={pageProps.cookies} theme={theme}>
 				<Component {...pageProps} />
-			</ThemeProvider>
+			</Chakra>
 		</>
 	)
 }
 
-export default App
+export { getServerSideProps } from "@components/Chakra"

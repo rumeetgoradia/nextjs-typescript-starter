@@ -1,21 +1,5 @@
-import { createMuiTheme } from "@material-ui/core"
+import { extendTheme } from "@chakra-ui/react"
 
-const theme = createMuiTheme({
-	typography: {
-		fontFamily: [
-			'"Inter"',
-			"-apple-system",
-			"BlinkMacSystemFont",
-			'"Segoe UI"',
-			"Roboto",
-			'"Helvetica Neue"',
-			"Arial",
-			"sans-serif",
-			'"Apple Color Emoji"',
-			'"Segoe UI Emoji"',
-			'"Segoe UI Symbol"',
-		].join(","),
-	},
-})
+const theme = extendTheme({})
 
 export default theme

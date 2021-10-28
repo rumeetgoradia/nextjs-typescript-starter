@@ -20,28 +20,19 @@ npx create-next-app -e https://github.com/rumeetgoradia/nextjs-typescript-starte
 ## Checklist
 1. Update `package.json` and `constants/seo.ts` with relevant project information. Update `next-seo.config.ts` if needed.
 2. Update brand/logo in `public/images`.
-3. [Generate favicons](https://realfavicongenerator.net/) and save them in `public/favicons`. Update `pages/_document.tsx` if using non-default file names.
-4. Save font files in `public/fonts` and update:
-   - `pages/_document.tsx`
-   - `public/fonts/fonts.css`
-   - `theme/index.ts`
-   - `vercel.json`
+3. [Generate favicons](https://realfavicongenerator.net/) and save them in `public/favicons`. Update `pages/_document.tsx`.
 
 ## Packages
 
 ### UI
-- [Material-UI](https://www.npmjs.com/package/@material-ui/core)
+- [Chakra UI](https://www.npmjs.com/package/@chakra-ui/react)
+- [Framer Motion](https://www.npmjs.com/package/framer-motion)
 
 ### Images & Icons
-- [SVGR Webpack](https://www.npmjs.com/package/@svgr/webpack)
 - [React Icons](https://www.npmjs.com/package/react-icons)
 
 ### Forms
 - [React Hook Form](https://www.npmjs.com/package/react-hook-form)
-- [Yup](https://www.npmjs.com/package/yup)
-
-### HTTP Requests
-- [Axios](https://www.npmjs.com/package/axios)
 
 ### SEO
 - [Next SEO](https://www.npmjs.com/package/next-seo)
