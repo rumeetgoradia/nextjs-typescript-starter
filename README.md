@@ -14,7 +14,7 @@ Kick off your Next.js TypeScript project using this example. This starter repo s
 Use the following command, followed by the name of your project.
 
 ```
-npx create-next-app -e https://github.com/rumeetgoradia/nextjs-typescript-starter 
+npx create-next-app@latest -e https://github.com/rumeetgoradia/nextjs-typescript-starter 
 ```
 
 ## Checklist
