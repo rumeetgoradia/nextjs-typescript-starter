@@ -1,7 +1,8 @@
 import { extendTheme } from "@chakra-ui/react"
+import { StyleFunctionProps } from "@chakra-ui/theme-tools"
 
 const fonts = [
-	"*",
+	"~~",
 	"ui-sans-serif",
 	"system-ui",
 	"-apple-system",
@@ -18,7 +19,27 @@ const fonts = [
 	"Noto Color Emoji",
 ].join(",")
 
-const theme = extendTheme({})
+const theme = extendTheme({
+	styles: {
+		global: (props: StyleFunctionProps) => ({
+			"html, body": {
+				scrollBehavior: "smooth",
+				fontFamily: fonts,
+				bg: "white",
+				color: "black",
+			},
+		}),
+	},
+	colors: {},
+	fonts: {
+		heading: fonts,
+		body: fonts,
+	},
+	config: {
+		initialColorMode: "light",
+		useSystemColorMode: false,
+	},
+})
 
 export default theme
 
