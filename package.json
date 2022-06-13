@@ -11,28 +11,28 @@
     "postbuild": "next-sitemap"
   },
   "dependencies": {
-    "@chakra-ui/react": "^1.8.8",
-    "@emotion/react": "^11.9.0",
-    "@emotion/styled": "^11.8.1",
+    "@chakra-ui/react": "^2.2.1",
+    "@emotion/react": "^11.9.3",
+    "@emotion/styled": "^11.9.3",
     "@plaiceholder/next": "^2.3.0",
-    "framer-motion": "^6.3.3",
-    "next": "^12.1.5",
+    "framer-motion": "^6.3.11",
+    "next": "^12.1.6",
     "next-connect": "^0.12.2",
     "next-seo": "^5.4.0",
-    "next-sitemap": "^2.5.20",
+    "next-sitemap": "^3.0.5",
     "plaiceholder": "^2.3.0",
-    "preact": "^10.7.1",
+    "preact": "^10.7.3",
     "react": "18.1.0",
     "react-dom": "18.1.0",
-    "react-hook-form": "^7.30.0",
-    "react-icons": "^4.3.1",
-    "redaxios": "^0.4.1",
-    "sharp": "^0.30.4"
+    "react-hook-form": "^7.32.0",
+    "react-icons": "^4.4.0",
+    "redaxios": "^0.5.0",
+    "sharp": "^0.30.6"
   },
   "devDependencies": {
-    "@types/react": "18.0.8",
-    "eslint": "8.14.0",
-    "eslint-config-next": "12.1.5",
-    "typescript": "4.6.3"
+    "@types/react": "18.0.12",
+    "eslint": "8.17.0",
+    "eslint-config-next": "12.1.6",
+    "typescript": "4.7.3"
   }
 }
