@@ -1,4 +1,4 @@
-import { SITE_DESCRIPTION, SITE_NAME, SITE_URL } from "@constants"
+import { SITE_DESCRIPTION, SITE_NAME, SITE_URL } from "@/constants"
 import { NextSeoProps } from "next-seo"
 
 const SeoProps: NextSeoProps = {

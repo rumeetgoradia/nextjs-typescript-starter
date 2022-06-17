@@ -1,4 +1,4 @@
-const siteUrl = ""
+const siteUrl = "TODO"
 
 module.exports = {
 	siteUrl,

@@ -13,14 +13,12 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
+    "incremental": false,
+    "noUncheckedIndexedAccess": true,
     "baseUrl": ".",
     "paths": {
-      "@components/*": ["components/*"],
-      "@constants": ["constants/index.ts"],
-      "@images/*": ["public/images/*"],
-      "@theme": ["theme/index.ts"],
-      "@utils": ["utils/index.ts"],
-    },
+      "@/*": ["./src/*"]
+    }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
   "exclude": ["node_modules"]
