@@ -2,7 +2,7 @@ import { extendTheme } from "@chakra-ui/react"
 import { StyleFunctionProps } from "@chakra-ui/theme-tools"
 
 const fonts = [
-	"~~",
+	"TODO",
 	"ui-sans-serif",
 	"system-ui",
 	"-apple-system",
